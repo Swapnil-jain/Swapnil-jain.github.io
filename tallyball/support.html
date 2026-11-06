@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Tallyball: Support</title>
+<style>
+/* Shared style for every app's legal pages. build.py inlines this file into each page,
+   then appends the app's own colour tokens (the "theme" block of its JSON), so an app
+   overrides colours only, never layout. Dark is the default; light follows the system. */
+:root {
+  --bg: #0b0d12; --surface: #151922; --text: #e8ebf2; --muted: #a3aab8;
+  --accent: #8ab4ff; --link: #8fd3ff; --border: rgba(255,255,255,0.08);
+  --warn-bg: #3a2a00; --warn-text: #ffe08a;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f7f8fb; --surface: #ffffff; --text: #141a2a; --muted: #4b5568;
+    --accent: #2b5fd9; --link: #1b5fa8; --border: rgba(0,0,0,0.10);
+    --warn-bg: #fff4cc; --warn-text: #5c4400; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
+.app { color: var(--accent); font-weight: 600; font-size: 15px; letter-spacing: 0.02em; margin: 0 0 4px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+h3 { font-size: 17px; margin: 20px 0 4px; }
+p, li { color: var(--text); overflow-wrap: anywhere; }
+.muted { color: var(--muted); font-size: 15px; }
+a { color: var(--link); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px 18px; margin: 16px 0; }
+.draft { background: var(--warn-bg); color: var(--warn-text); border-radius: 12px; padding: 12px 16px; margin: 0 0 24px; font-size: 15px; }
+.draft p { color: var(--warn-text); margin: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+nav { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 15px; }
+nav a { margin-right: 16px; }
+/* tallyball theme */
+:root { --bg: #0a1420; --surface: #13212f; --text: #f3f6f9; --muted: #a3b3c4; --accent: #d8f249; --link: #45d3c7; --border: #2b3f55; }
+@media (prefers-color-scheme: light) { :root { --bg: #f4f7fa; --surface: #ffffff; --text: #0a1420; --muted: #4a5b6c; --accent: #4f5c00; --link: #0b6b63; --border: #d5dde6; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <p class="app">Tallyball: Pickleball Score</p>
+  <h1>Support</h1>
+  <p class="muted">Updated 2026-11-06</p>
+</header>
+
+<div class="card">
+  <p><strong>Email:</strong> <a href="mailto:business@firstimpresslabs.com?subject=Tallyball%20support">business@firstimpresslabs.com</a></p>
+</div>
+
+<h2>Questions</h2>
+
+<h3>Does it work without an Apple Watch?</h3>
+<p>Yes. Everything works on iPhone alone. On the Play screen tap <strong>Start</strong>, then tap the top or bottom half of the screen for the side that won each rally. <strong>Undo</strong> is at the left of the middle band.</p>
+<p>With an Apple Watch, you can score from your wrist and your iPhone shows the same match live, so it can sit courtside as a scoreboard.</p>
+
+<h3>Will I lose my score if the app closes?</h3>
+<p>No. Every rally is saved on the device the moment you tap it, on your Watch and on your iPhone. If the app closes, your Watch goes to sleep or you restart your phone, open Tallyball again and the match is where you left it.</p>
+
+<h3>Why does my Watch show the clock instead of the score?</h3>
+<p>During a match the Watch app asks watchOS to keep it in front, so raising your wrist shows the score. watchOS limits how long that lasts (about an hour at a time) and can end it early. If you see the clock, tap the Tallyball icon: your match is saved and comes straight back.</p>
+
+<h3>I tapped the wrong side. How do I fix it?</h3>
+<p>Tap <strong>Undo</strong>. It takes back the last rally, even the point that ended a game or the match. Tap it again to go back further. On the Watch, Undo is the small button in the top-left corner; the crown does nothing during a match, so it cannot change the score by accident.</p>
+
+<h3>How do I get Tallyball Pro on my Apple Watch?</h3>
+<p>Buy or restore Tallyball Pro in the iPhone app. Your iPhone tells your Watch, and the Pro options on the Watch unlock the next time the two connect. There is no purchase screen on the Watch.</p>
+
+<h3>How do I cancel my subscription?</h3>
+<p>Open the Settings app on your iPhone, tap your name, then Subscriptions, then Tallyball: Pickleball Score, and tap Cancel Subscription. Cancel at least 24 hours before the period ends to avoid the next charge. Tallyball Pro stays on until the end of the period you paid for. Deleting the app does not cancel it.</p>
+
+<h3>How do I get a refund?</h3>
+<p>Apple handles all payments and refunds: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+<h3>I reinstalled the app or got a new phone. How do I get Tallyball Pro back?</h3>
+<p>Sign in with the same Apple Account, then tap Restore Purchases in the app's Settings or on the Pro screen on your iPhone.</p>
+
+<nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
+</main>
+</body>
+</html>
