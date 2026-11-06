@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Marcador Pádel: Soporte</title>
+<style>
+/* Shared style for every app's legal pages. build.py inlines this file into each page,
+   then appends the app's own colour tokens (the "theme" block of its JSON), so an app
+   overrides colours only, never layout. Dark is the default; light follows the system. */
+:root {
+  --bg: #0b0d12; --surface: #151922; --text: #e8ebf2; --muted: #a3aab8;
+  --accent: #8ab4ff; --link: #8fd3ff; --border: rgba(255,255,255,0.08);
+  --warn-bg: #3a2a00; --warn-text: #ffe08a;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f7f8fb; --surface: #ffffff; --text: #141a2a; --muted: #4b5568;
+    --accent: #2b5fd9; --link: #1b5fa8; --border: rgba(0,0,0,0.10);
+    --warn-bg: #fff4cc; --warn-text: #5c4400; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
+.app { color: var(--accent); font-weight: 600; font-size: 15px; letter-spacing: 0.02em; margin: 0 0 4px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+h3 { font-size: 17px; margin: 20px 0 4px; }
+p, li { color: var(--text); overflow-wrap: anywhere; }
+.muted { color: var(--muted); font-size: 15px; }
+a { color: var(--link); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px 18px; margin: 16px 0; }
+.draft { background: var(--warn-bg); color: var(--warn-text); border-radius: 12px; padding: 12px 16px; margin: 0 0 24px; font-size: 15px; }
+.draft p { color: var(--warn-text); margin: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+nav { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 15px; }
+nav a { margin-right: 16px; }
+/* padel theme */
+:root { --bg: #06122B; --surface: #0D1E42; --text: #F4F7FF; --muted: #A9B8DA; --accent: #E4F84B; --link: #6FB6FF; --border: #2A3F73; }
+@media (prefers-color-scheme: light) { :root { --bg: #F3F6FC; --surface: #FFFFFF; --text: #06122B; --muted: #44506B; --accent: #4B5A00; --link: #1F4FC9; --border: #D3DBEA; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <p class="app">Marcador Pádel Watch y Tenis</p>
+  <h1>Soporte</h1>
+  <p class="muted">Actualizado el 6 de noviembre de 2026</p>
+</header>
+
+<div class="card">
+  <p><strong>Correo electrónico:</strong> <a href="mailto:business@firstimpresslabs.com?subject=Soporte%20Marcador%20P%C3%A1del">business@firstimpresslabs.com</a></p>
+</div>
+
+<h2>Preguntas frecuentes</h2>
+
+<h3>¿Funciona sin Apple Watch?</h3>
+<p>Sí. Todo funciona solo con el iPhone. En Inicio toca <strong>Empezar partido</strong> y, después, toca la mitad de abajo (tu pareja) o la de arriba (rivales) según quién gane cada punto. <strong>Deshacer</strong> está en la franja central (la red).</p>
+<p>Con un Apple Watch puedes llevar el marcador desde la muñeca y el iPhone muestra el mismo partido en directo, así que puedes dejarlo junto a la pista como marcador.</p>
+
+<h3>¿Pierdo el marcador si la app se cierra?</h3>
+<p>No. Cada punto se guarda en el dispositivo en el momento en que lo tocas, en el reloj y en el iPhone. Si la app se cierra, el reloj se duerme o reinicias el móvil, vuelve a abrir Marcador Pádel y el partido estará donde lo dejaste.</p>
+
+<h3>¿Por qué el reloj muestra la hora en vez del marcador?</h3>
+<p>Durante un partido, la app del reloj pide a watchOS que la mantenga en primer plano, para que al levantar la muñeca veas el marcador. watchOS limita cuánto dura eso (alrededor de una hora seguida) y puede cortarlo antes. Si ves la hora, toca el icono de Marcador Pádel: el partido está guardado y vuelve al momento.</p>
+
+<h3>Me he equivocado de lado. ¿Cómo lo corrijo?</h3>
+<p>Toca <strong>Deshacer</strong>. Quita el último punto, incluso el que cerró un juego, un set o el partido. Tócalo otra vez para retroceder más. En el reloj, Deshacer es el botón pequeño de arriba a la izquierda; la Digital Crown no hace nada durante un partido, así que no puede cambiar el marcador sin querer.</p>
+
+<h3>¿Cómo quito el punto de oro?</h3>
+<p>En <strong>Nuevo partido</strong>, en <strong>Iguales</strong>, elige <strong>Ventaja</strong> (o <strong>Punto estrella</strong>) en lugar de punto de oro.</p>
+
+<h3>¿Cómo activo Pádel Pro en mi Apple Watch?</h3>
+<p>Compra o restaura Pádel Pro en la app del iPhone. Tu iPhone se lo indica al reloj, y las opciones Pro del reloj se desbloquean la próxima vez que se conecten. En el reloj no hay pantalla de compra.</p>
+
+<h3>¿Cómo cancelo mi suscripción?</h3>
+<p>Abre la app Ajustes, toca tu nombre, después Suscripciones, después Marcador Pádel Watch y Tenis, y toca Cancelar suscripción. Cancela al menos 24 horas antes de que termine el periodo para evitar el siguiente cargo. Conservas Pádel Pro hasta el final del periodo que has pagado. Eliminar la app no cancela la suscripción.</p>
+
+<h3>¿Cómo pido un reembolso?</h3>
+<p>Apple gestiona todos los pagos y reembolsos: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+<h3>He reinstalado la app o tengo un dispositivo nuevo. ¿Cómo recupero Pádel Pro?</h3>
+<p>Inicia sesión con la misma Cuenta de Apple y toca «Restaurar compras» en Ajustes o en la pantalla Pro del iPhone.</p>
+
+<nav><a href="privacy.html">Política de privacidad</a><a href="terms.html">Términos de uso</a></nav>
+</main>
+</body>
+</html>
