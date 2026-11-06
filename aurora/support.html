@@ -6,36 +6,46 @@
 <meta name="color-scheme" content="dark light">
 <title>Aurora Forecast: Support</title>
 <style>
-  :root {
-    --bg: #070b17; --surface: #0f1629; --text: #e8edf7; --muted: #a3adc2;
-    --accent: #3dffa2; --link: #67e8f9; --border: rgba(255,255,255,0.08);
-  }
-  @media (prefers-color-scheme: light) {
-    :root { --bg: #f7f8fb; --surface: #ffffff; --text: #141a2a; --muted: #4b5568;
-      --accent: #0a8a55; --link: #0b6b8a; --border: rgba(0,0,0,0.10); }
-  }
-  * { box-sizing: border-box; }
-  html { -webkit-text-size-adjust: 100%; }
-  body { margin: 0; background: var(--bg); color: var(--text);
-    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
-  main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
-  header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
-  .app { color: var(--accent); font-weight: 600; font-size: 15px; letter-spacing: 0.02em; margin: 0 0 4px; }
-  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
-  h2 { font-size: 21px; margin: 32px 0 8px; }
-  h3 { font-size: 17px; margin: 20px 0 4px; }
-  p, li { color: var(--text); }
-  .muted { color: var(--muted); font-size: 15px; }
-  a { color: var(--link); }
-  ul { padding-left: 22px; }
-  li { margin: 4px 0; }
-  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px 18px; margin: 16px 0; }
-  table { width: 100%; border-collapse: collapse; font-size: 15px; }
-  th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--border); }
-  th { color: var(--muted); font-weight: 600; }
-  .table-wrap { overflow-x: auto; }
-  nav { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 15px; }
-  nav a { margin-right: 16px; }
+/* Shared style for every app's legal pages. build.py inlines this file into each page,
+   then appends the app's own colour tokens (the "theme" block of its JSON), so an app
+   overrides colours only, never layout. Dark is the default; light follows the system. */
+:root {
+  --bg: #0b0d12; --surface: #151922; --text: #e8ebf2; --muted: #a3aab8;
+  --accent: #8ab4ff; --link: #8fd3ff; --border: rgba(255,255,255,0.08);
+  --warn-bg: #3a2a00; --warn-text: #ffe08a;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f7f8fb; --surface: #ffffff; --text: #141a2a; --muted: #4b5568;
+    --accent: #2b5fd9; --link: #1b5fa8; --border: rgba(0,0,0,0.10);
+    --warn-bg: #fff4cc; --warn-text: #5c4400; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
+.app { color: var(--accent); font-weight: 600; font-size: 15px; letter-spacing: 0.02em; margin: 0 0 4px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+h3 { font-size: 17px; margin: 20px 0 4px; }
+p, li { color: var(--text); overflow-wrap: anywhere; }
+.muted { color: var(--muted); font-size: 15px; }
+a { color: var(--link); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px 18px; margin: 16px 0; }
+.draft { background: var(--warn-bg); color: var(--warn-text); border-radius: 12px; padding: 12px 16px; margin: 0 0 24px; font-size: 15px; }
+.draft p { color: var(--warn-text); margin: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+nav { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 15px; }
+nav a { margin-right: 16px; }
+/* aurora theme */
+:root { --bg: #070b17; --surface: #0f1629; --text: #e8edf7; --muted: #a3adc2; --accent: #3dffa2; --link: #67e8f9; }
+@media (prefers-color-scheme: light) { :root { --bg: #f7f8fb; --surface: #ffffff; --text: #141a2a; --muted: #4b5568; --accent: #0a8a55; --link: #0b6b8a; } }
 </style>
 </head>
 <body>
@@ -81,12 +91,12 @@
 <p>No. Approximate location is enough. If you turn on alerts, the location is rounded to 0.1 degree (about 11 km) before it is stored. See the <a href="privacy.html">Privacy Policy</a>.</p>
 
 <h3>How do I cancel my subscription?</h3>
-<p>Open the Settings app on your iPhone, tap your name, then Subscriptions, then Aurora Forecast &amp; Alerts Now, and tap Cancel Subscription. You can also get there from Settings in the app. Cancel at least 24 hours before the period ends to avoid the next charge. Pro stays on until the end of the period you paid for. Deleting the app does not cancel it.</p>
+<p>Open the Settings app on your iPhone, tap your name, then Subscriptions, then Aurora Forecast &amp; Alerts Now, and tap Cancel Subscription. You can also get there from Settings in the app. Cancel at least 24 hours before the period ends to avoid the next charge. Aurora Pro stays on until the end of the period you paid for. Deleting the app does not cancel it.</p>
 
 <h3>How do I get a refund?</h3>
 <p>Apple handles all payments and refunds: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
 
-<h3>I reinstalled the app or got a new phone. How do I get Pro back?</h3>
+<h3>I reinstalled the app or got a new phone. How do I get Aurora Pro back?</h3>
 <p>Sign in with the same Apple Account, then tap Restore Purchases in the app's Settings or on the Pro screen. Turn alerts on again afterwards.</p>
 
 <h3>Where does the data come from?</h3>
