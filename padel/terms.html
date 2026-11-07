@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Marcador Pádel: Términos de uso</title>
+<style>
+/* Shared style for every app's legal pages. build.py inlines this file into each page,
+   then appends the app's own colour tokens (the "theme" block of its JSON), so an app
+   overrides colours only, never layout. Dark is the default; light follows the system. */
+:root {
+  --bg: #0b0d12; --surface: #151922; --text: #e8ebf2; --muted: #a3aab8;
+  --accent: #8ab4ff; --link: #8fd3ff; --border: rgba(255,255,255,0.08);
+  --warn-bg: #3a2a00; --warn-text: #ffe08a;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f7f8fb; --surface: #ffffff; --text: #141a2a; --muted: #4b5568;
+    --accent: #2b5fd9; --link: #1b5fa8; --border: rgba(0,0,0,0.10);
+    --warn-bg: #fff4cc; --warn-text: #5c4400; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
+.app { color: var(--accent); font-weight: 600; font-size: 15px; letter-spacing: 0.02em; margin: 0 0 4px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+h3 { font-size: 17px; margin: 20px 0 4px; }
+p, li { color: var(--text); overflow-wrap: anywhere; }
+.muted { color: var(--muted); font-size: 15px; }
+a { color: var(--link); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px 18px; margin: 16px 0; }
+.draft { background: var(--warn-bg); color: var(--warn-text); border-radius: 12px; padding: 12px 16px; margin: 0 0 24px; font-size: 15px; }
+.draft p { color: var(--warn-text); margin: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+nav { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 15px; }
+nav a { margin-right: 16px; }
+/* padel theme */
+:root { --bg: #06122B; --surface: #0D1E42; --text: #F4F7FF; --muted: #A9B8DA; --accent: #E4F84B; --link: #6FB6FF; --border: #2A3F73; }
+@media (prefers-color-scheme: light) { :root { --bg: #F3F6FC; --surface: #FFFFFF; --text: #06122B; --muted: #44506B; --accent: #4B5A00; --link: #1F4FC9; --border: #D3DBEA; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <p class="app">Marcador Pádel Watch y Tenis</p>
+  <h1>Términos de uso</h1>
+  <p class="muted">En vigor desde el 6 de noviembre de 2026</p>
+</header>
+
+<h2>1. El acuerdo</h2>
+<p>Marcador Pádel Watch y Tenis («la app») se te concede bajo licencia según el contrato de licencia de usuario final estándar de Apple para apps con licencia (<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">EULA estándar de Apple</a>). Estos términos lo completan. Si ambos se contradicen, prevalece el EULA estándar de Apple. La app es de Swapnil Jain («nosotros»).</p>
+
+<h2>2. El marcador es el que tú tocas</h2>
+<div class="card">
+  <p>Marcador Pádel lleva el marcador a partir de los puntos que tocas. No ve el partido, así que un toque olvidado o equivocado da un marcador erróneo hasta que lo deshaces. Los avisos de saque, lado, canto y cambio de campo siguen las reglas habituales del pádel (FIP) y del tenis para el formato que eliges; un club, una liga o un torneo pueden jugar con otras reglas.</p>
+<ul>
+  <li><strong>El marcador lo deciden los jugadores (o el árbitro)</strong>, no la app. No garantizamos que un marcador, un saque o un aviso que muestra la app sea correcto para tu partido.</li>
+  <li>Mientras el punto está en juego, mira la bola, no la muñeca.</li>
+</ul>
+</div>
+
+<h2>3. No es consejo médico</h2>
+<p>Marcador Pádel lleva el marcador y, si lo permites, guarda tus partidos como entrenamientos en la app Salud. No es un producto sanitario ni un dispositivo de entrenamiento, y no da consejos médicos. Si tienes alguna duda de salud sobre jugar, consulta a tu médico.</p>
+
+<h2>4. Pádel Pro</h2>
+<p>Algunas funciones requieren Pádel Pro:</p>
+<ul>
+  <li><strong>Pádel Pro Semanal</strong>: 3,99 € a la semana, suscripción de renovación automática.</li>
+  <li><strong>Pádel Pro Anual</strong>: 29,99 € al año, suscripción de renovación automática.</li>
+  <li><strong>Pádel Pro de por vida</strong>: 49,99 €, compra única que no se renueva.</li>
+</ul>
+<p>Los precios están en euros para España y pueden ser distintos en otros países; se aplica el precio que ves en la app antes de comprar. Las compras se hacen en el iPhone; después, Pádel Pro también funciona en la app del Apple Watch.</p>
+<ul>
+  <li>El pago se carga en tu Cuenta de Apple cuando confirmas la compra.</li>
+  <li>La suscripción se renueva automáticamente con la misma duración y el mismo precio, salvo que desactives la renovación automática al menos 24 horas antes de que termine el periodo en curso. El cargo de la renovación se hace en las 24 horas anteriores al final del periodo en curso.</li>
+  <li>Puedes gestionarla o cancelarla en Ajustes: toca tu nombre y después Suscripciones. Al cancelar, se detiene la siguiente renovación y conservas Pádel Pro hasta el final del periodo que has pagado.</li>
+  <li>Eliminar la app no cancela la suscripción.</li>
+  <li>Apple gestiona los reembolsos según sus propias condiciones: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</li>
+  <li>Usa «Restaurar compras» en la app para recuperar Pádel Pro en un dispositivo nuevo o restablecido con la misma Cuenta de Apple.</li>
+</ul>
+
+<h2>5. Uso aceptable</h2>
+<p>Usa la app solo con fines lícitos.</p>
+
+<h2>6. Cambios y disponibilidad</h2>
+<p>Podemos cambiar, añadir o retirar funciones, y podemos actualizar estos términos. Cuando lo hagamos, cambiaremos la fecha de entrada en vigor indicada arriba. Si sigues usando la app después de un cambio, se aplican los nuevos términos.</p>
+
+<h2>7. Responsabilidad</h2>
+<p>Trabajamos para que la app sea precisa y esté disponible, pero no garantizamos que no tenga errores ni que esté siempre disponible. En la medida en que la ley lo permita, la app se ofrece «tal cual» y no somos responsables de ninguna pérdida o daño derivado de confiar en un marcador, un saque o un lado que muestra la app, un canto del marcador, un aviso de cambio de campo o un aviso que no aparece, como también establece el EULA estándar de Apple. Nada de lo anterior limita los derechos que la ley te reconoce como consumidor.</p>
+
+<h2>8. Contacto</h2>
+<p><a href="mailto:business@firstimpresslabs.com">business@firstimpresslabs.com</a></p>
+
+<nav><a href="support.html">Soporte</a><a href="privacy.html">Política de privacidad</a></nav>
+</main>
+</body>
+</html>
