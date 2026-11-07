@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Hair Color: Support</title>
+<style>
+/* Shared style for every app's legal pages. build.py inlines this file into each page,
+   then appends the app's own colour tokens (the "theme" block of its JSON), so an app
+   overrides colours only, never layout. Dark is the default; light follows the system. */
+:root {
+  --bg: #0b0d12; --surface: #151922; --text: #e8ebf2; --muted: #a3aab8;
+  --accent: #8ab4ff; --link: #8fd3ff; --border: rgba(255,255,255,0.08);
+  --warn-bg: #3a2a00; --warn-text: #ffe08a;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f7f8fb; --surface: #ffffff; --text: #141a2a; --muted: #4b5568;
+    --accent: #2b5fd9; --link: #1b5fa8; --border: rgba(0,0,0,0.10);
+    --warn-bg: #fff4cc; --warn-text: #5c4400; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
+.app { color: var(--accent); font-weight: 600; font-size: 15px; letter-spacing: 0.02em; margin: 0 0 4px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+h3 { font-size: 17px; margin: 20px 0 4px; }
+p, li { color: var(--text); overflow-wrap: anywhere; }
+.muted { color: var(--muted); font-size: 15px; }
+a { color: var(--link); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px 18px; margin: 16px 0; }
+.draft { background: var(--warn-bg); color: var(--warn-text); border-radius: 12px; padding: 12px 16px; margin: 0 0 24px; font-size: 15px; }
+.draft p { color: var(--warn-text); margin: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+nav { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 15px; }
+nav a { margin-right: 16px; }
+/* hair theme */
+:root { --bg: #140f16; --surface: #211a25; --text: #f7eef0; --muted: #b9a9b5; --accent: #f2a27c; --link: #f2a27c; }
+@media (prefers-color-scheme: light) { :root { --bg: #fbf6f1; --surface: #ffffff; --text: #2a1a2e; --muted: #6b5a66; --accent: #a64b24; --link: #a64b24; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <p class="app">Hair Color Changer - AI Try On</p>
+  <h1>Support</h1>
+  <p class="muted">Updated 2026-11-07</p>
+</header>
+
+<div class="card">
+  <p><strong>Email:</strong> <a href="mailto:business@firstimpresslabs.com?subject=Hair%20Color%20support">business@firstimpresslabs.com</a></p>
+</div>
+
+<h2>Questions</h2>
+
+<h3>How many free looks do I get?</h3>
+<p>Two looks in total, in any color. A look that fails, is blocked or that you cancel is not counted. Hair Color Pro adds new cuts, saves without the mark, side-by-side compare and up to 40 looks every 30 days.</p>
+
+<h3>Why does it say it couldn't find a face?</h3>
+<p>The app only sends a photo that shows one face clearly. Use a well-lit photo of just you, facing the camera, with your face filling a good part of the picture.</p>
+
+<h3>Where does my photo go?</h3>
+<p>Only after you allow it, and only when you tap Try this look, the photo is sent to Replicate and on to Google's image model, which make the look. We do not keep it; their terms are linked in the privacy policy. You can turn this off in the app's Settings; then nothing is sent.</p>
+
+<h3>How do I cancel my subscription?</h3>
+<p>Open the Settings app on your iPhone, tap your name, then Subscriptions, then Hair Color Changer - AI Try On, and tap Cancel Subscription. Cancel at least 24 hours before the period ends to avoid the next charge. Hair Color Pro stays on until the end of the period you paid for. Deleting the app does not cancel it.</p>
+
+<h3>How do I get a refund?</h3>
+<p>Apple handles all payments and refunds: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+<h3>I reinstalled the app or got a new phone. How do I get Hair Color Pro back?</h3>
+<p>Sign in with the same Apple Account, then tap Restore Purchases in the app's Settings or on the Pro screen.</p>
+
+<nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
+</main>
+</body>
+</html>
