@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Alarmazo: Soporte</title>
+<style>
+/* Shared style for every app's legal pages. build.py inlines this file into each page,
+   then appends the app's own colour tokens (the "theme" block of its JSON), so an app
+   overrides colours only, never layout. Dark is the default; light follows the system. */
+:root {
+  --bg: #0b0d12; --surface: #151922; --text: #e8ebf2; --muted: #a3aab8;
+  --accent: #8ab4ff; --link: #8fd3ff; --border: rgba(255,255,255,0.08);
+  --warn-bg: #3a2a00; --warn-text: #ffe08a;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f7f8fb; --surface: #ffffff; --text: #141a2a; --muted: #4b5568;
+    --accent: #2b5fd9; --link: #1b5fa8; --border: rgba(0,0,0,0.10);
+    --warn-bg: #fff4cc; --warn-text: #5c4400; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
+.app { color: var(--accent); font-weight: 600; font-size: 15px; letter-spacing: 0.02em; margin: 0 0 4px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+h3 { font-size: 17px; margin: 20px 0 4px; }
+p, li { color: var(--text); overflow-wrap: anywhere; }
+.muted { color: var(--muted); font-size: 15px; }
+a { color: var(--link); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px 18px; margin: 16px 0; }
+.draft { background: var(--warn-bg); color: var(--warn-text); border-radius: 12px; padding: 12px 16px; margin: 0 0 24px; font-size: 15px; }
+.draft p { color: var(--warn-text); margin: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+nav { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 15px; }
+nav a { margin-right: 16px; }
+/* alarmazo theme */
+:root { --bg: #0E1020; --surface: #191C33; --text: #F7F3EC; --muted: #ABB0C9; --accent: #FF7A2F; --link: #FFC83D; --border: #2A2E4A; }
+@media (prefers-color-scheme: light) { :root { --bg: #FFF6EC; --surface: #FFFFFF; --text: #1C1530; --muted: #5C5470; --accent: #B4430B; --link: #B4430B; --border: #E8D9C7; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <p class="app">Alarmazo: Alarma Fuerte</p>
+  <h1>Soporte</h1>
+  <p class="muted">Actualizado el 6 de noviembre de 2026</p>
+</header>
+
+<div class="card">
+  <p><strong>Correo electrónico:</strong> <a href="mailto:business@firstimpresslabs.com?subject=Soporte%20Alarmazo">business@firstimpresslabs.com</a></p>
+  <p class="muted">Si nos escribes porque una alarma no ha sonado, dinos a qué hora estaba puesta y qué modelo de iPhone y versión de iOS usas.</p>
+</div>
+
+<h2>Preguntas frecuentes</h2>
+
+<h3>¿Suena la alarma con el móvil en silencio?</h3>
+<p>Sí. Las alarmas de Alarmazo son alarmas del sistema (AlarmKit de Apple): suenan con el móvil en silencio, con cualquier modo de concentración y con la app cerrada, como las de la app Reloj. No pueden sonar si el móvil está apagado o sin batería.</p>
+
+<h3>¿Por qué no ha sonado mi alarma?</h3>
+<p>Comprueba que el móvil estaba encendido y con batería, que la alarma está activada en la app y que has permitido las alarmas a Alarmazo en la app Ajustes de iOS.</p>
+<p>iOS no hace sonar las alarmas de una app oculta o bloqueada con Face ID o con un código. Si has ocultado o bloqueado Alarmazo, deja de ocultarla o de bloquearla.</p>
+<p>Para citas importantes, pon también una alarma de respaldo.</p>
+
+<h3>¿Qué pasa si paro la alarma sin hacer la misión?</h3>
+<p>La alarma vuelve a sonar al cabo de un minuto, hasta que abras la app y hagas la misión. Para que nadie se quede atrapado, deja de insistir tras 10 veces.</p>
+
+<h3>No consigo resolver la misión. ¿Qué hago?</h3>
+<p>Si fallas 3 veces el mismo problema, el siguiente es más fácil. Y tras 2 minutos en la pantalla de la misión aparece <strong>No puedo resolverla</strong>: mantenlo pulsado 3 segundos para terminar.</p>
+
+<h3>¿Cómo cancelo mi suscripción?</h3>
+<p>Abre la app Ajustes, toca tu nombre, después Suscripciones, después Alarmazo: Alarma Fuerte, y toca Cancelar suscripción. Cancela al menos 24 horas antes de que termine el periodo para evitar el siguiente cargo. Conservas Alarmazo Pro hasta el final del periodo que has pagado. Eliminar la app no cancela la suscripción.</p>
+
+<h3>¿Cómo pido un reembolso?</h3>
+<p>Apple gestiona todos los pagos y reembolsos: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+<h3>He reinstalado la app o tengo un dispositivo nuevo. ¿Cómo recupero Alarmazo Pro?</h3>
+<p>Inicia sesión con la misma Cuenta de Apple y toca «Restaurar compras» en la app.</p>
+
+<nav><a href="privacy.html">Política de privacidad</a><a href="terms.html">Términos de uso</a></nav>
+</main>
+</body>
+</html>
