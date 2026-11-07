@@ -57,7 +57,7 @@ nav a { margin-right: 16px; }
 </header>
 
 <div class="card">
-  <p><strong>In short:</strong> no account, no ads, no analytics, no tracking. A photo leaves your phone only when you allow AI processing and tap Try this look; it goes to Replicate, which deletes it about an hour later, and we do not keep it.</p>
+  <p><strong>In short:</strong> no account, no ads, no analytics, no tracking. A photo leaves your phone only when you allow AI processing and tap Try this look; it goes to Replicate and Google to make your look, and we do not keep it.</p>
 </div>
 
 <h2>Who we are</h2>
@@ -81,18 +81,20 @@ nav a { margin-right: 16px; }
 <p>Apart from what the AI feature sends, as described below, we do not collect your name, email address, phone number, contacts, payment card details, browsing or search history, usage analytics or crash data. We do not ask for or use the advertising identifier.</p>
 
 <h2>Photos you send for AI processing</h2>
-<p>Only after you allow it in the app, and only when you tap Try this look, the app sends the photo you chose (made smaller first, about 1,000 pixels on its longest side, JPEG, with its photo metadata removed) and the shade and cut you picked to our server, hosted on Cloudflare, which passes it to <strong>Replicate</strong> to produce the result.</p>
+<p>Only after you allow it in the app, and only when you tap Try this look, the app sends the photo you chose (made smaller first, about 1,000 pixels on its longest side, JPEG, with its photo metadata removed) and the shade and cut you picked to our server, hosted on Cloudflare, which passes it to <strong>Replicate</strong> and <strong>Google</strong> to produce the result.</p>
 <ul>
-  <li><strong>Replicate</strong>: runs the AI model (FLUX.1 Kontext by Black Forest Labs) that redraws your hair in the shade or cut you chose. (<a href="https://replicate.com/privacy">privacy policy</a>)</li>
+  <li><strong>Replicate</strong>: receives the request and runs it on Google's image model. (<a href="https://replicate.com/privacy">privacy policy</a>)</li>
+  <li><strong>Google</strong>: runs the AI model (Gemini image, "Nano Banana") that redraws your hair in the shade or cut you chose. (<a href="https://policies.google.com/privacy">privacy policy</a>)</li>
 </ul>
 <p>The new look is downloaded to your phone from the address the AI service returns.</p>
 <p>Our server passes the request to Replicate and the result back to the app. We do not keep a copy of your photos or your looks. Like any web host, Cloudflare sees the IP address of each request.</p>
-<p>Replicate states that the inputs, outputs and logs of predictions made through its API are deleted automatically about an hour after the prediction finishes.</p>
+<p>Replicate deletes the inputs and outputs of predictions made through its API about an hour after they finish. Google's terms for its model allow it to keep inputs for up to 55 days, for abuse monitoring.</p>
 
 <h2>Who processes it</h2>
 <ul>
   <li><strong>Cloudflare</strong> hosts the server that passes your photo to the AI provider, as our processor.</li>
   <li><strong>Replicate</strong> processes the photos you send, as described above.</li>
+  <li><strong>Google</strong> processes the photos you send, as described above.</li>
   <li><strong>Apple</strong> handles all payments. We never see your card details.</li>
 </ul>
 <p>Apple handles its services under its own privacy policy: <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</p>
