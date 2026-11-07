@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Mecanografía: Política de privacidad</title>
+<style>
+/* Shared style for every app's legal pages. build.py inlines this file into each page,
+   then appends the app's own colour tokens (the "theme" block of its JSON), so an app
+   overrides colours only, never layout. Dark is the default; light follows the system. */
+:root {
+  --bg: #0b0d12; --surface: #151922; --text: #e8ebf2; --muted: #a3aab8;
+  --accent: #8ab4ff; --link: #8fd3ff; --border: rgba(255,255,255,0.08);
+  --warn-bg: #3a2a00; --warn-text: #ffe08a;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f7f8fb; --surface: #ffffff; --text: #141a2a; --muted: #4b5568;
+    --accent: #2b5fd9; --link: #1b5fa8; --border: rgba(0,0,0,0.10);
+    --warn-bg: #fff4cc; --warn-text: #5c4400; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
+.app { color: var(--accent); font-weight: 600; font-size: 15px; letter-spacing: 0.02em; margin: 0 0 4px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+h3 { font-size: 17px; margin: 20px 0 4px; }
+p, li { color: var(--text); overflow-wrap: anywhere; }
+.muted { color: var(--muted); font-size: 15px; }
+a { color: var(--link); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px 18px; margin: 16px 0; }
+.draft { background: var(--warn-bg); color: var(--warn-text); border-radius: 12px; padding: 12px 16px; margin: 0 0 24px; font-size: 15px; }
+.draft p { color: var(--warn-text); margin: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+nav { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 15px; }
+nav a { margin-right: 16px; }
+/* mecanografia theme */
+:root { --bg: #0d1020; --surface: #171b2f; --text: #eef0fa; --muted: #a6abc6; --accent: #8f98ff; --link: #8f98ff; }
+@media (prefers-color-scheme: light) { :root { --bg: #f5f3ee; --surface: #ffffff; --text: #151933; --muted: #585d74; --accent: #3a45d6; --link: #3a45d6; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <p class="app">Mecanografía: Escribir Rápido</p>
+  <h1>Política de privacidad</h1>
+  <p class="muted">En vigor desde el 6 de noviembre de 2026</p>
+</header>
+
+<div class="card">
+  <p><strong>En resumen:</strong> sin cuenta, sin servidor, sin anuncios, sin analítica y sin seguimiento. Tus respuestas, tus resultados y tus textos se quedan en tu dispositivo, y el recordatorio diario se programa en él. No recogemos ningún dato desde la app.</p>
+</div>
+
+<h2>Quiénes somos</h2>
+<p>Mecanografía: Escribir Rápido («la app») es una app de Swapnil Jain («nosotros»). Para cualquier pregunta sobre privacidad: <a href="mailto:business@firstimpresslabs.com">business@firstimpresslabs.com</a>.</p>
+
+<h2>Qué se queda en tu dispositivo</h2>
+<p>Estos datos se guardan en tu dispositivo y no se nos envían:</p>
+<ul>
+  <li>Tus respuestas del perfil: objetivo, examen, pulsaciones objetivo, fecha del examen, con qué dispositivo practicas y cuántos minutos al día</li>
+  <li>Los resultados de tus tests y lecciones</li>
+  <li>Los textos que pegas en «Mi texto»</li>
+  <li>Tus preferencias, como la hora del recordatorio</li>
+</ul>
+<p>Lo que escribes en un test o una lección se puntúa en tu dispositivo y después se descarta: solo se guardan el resultado y la lista de palabras con errores. Si conectas un teclado físico, la app lo detecta con el framework GameController de Apple solo para adaptar la pantalla; no registra tus pulsaciones.</p>
+
+<h2>Qué usa la app</h2>
+<p><strong>Notificaciones.</strong> Si lo permites, la app te recuerda cada día que practiques, a la hora que elijas. Los recordatorios se programan en tu dispositivo; no se nos envía nada sobre ellos.</p>
+
+<h2>Qué no recogemos</h2>
+<p>No recogemos tu nombre, tu correo electrónico, tu número de teléfono, tus contactos, tus fotos, los datos de tu tarjeta de pago, tu historial de navegación o de búsqueda ni datos de uso o de fallos de la app. Tampoco pedimos ni usamos el identificador de publicidad.</p>
+
+<h2>Quién trata tus datos</h2>
+<ul>
+  <li><strong>Apple</strong> gestiona todos los pagos. Nunca vemos los datos de tu tarjeta.</li>
+</ul>
+<p>Apple trata los datos de sus servicios según su propia política de privacidad: <a href="https://www.apple.com/es/legal/privacy/">apple.com/es/legal/privacy</a>.</p>
+
+<h2>Lo que no hacemos</h2>
+<ul>
+  <li>No vendemos ni compartimos tus datos, y no los usamos para publicidad.</li>
+  <li>No te rastreamos en apps ni sitios web de otras empresas.</li>
+  <li>La app no contiene anuncios ni SDK de analítica o de informes de fallos.</li>
+</ul>
+
+<h2>Tus opciones</h2>
+<ul>
+  <li>Puedes desactivar las notificaciones de la app en Ajustes en cualquier momento.</li>
+</ul>
+<p>Todo lo que guarda la app se borra cuando eliminas la app de tu dispositivo.</p>
+
+<h2>Menores</h2>
+<p>La app no está dirigida a menores de 13 años, y no recogemos a sabiendas datos de menores.</p>
+
+<h2>Cambios</h2>
+<p>Si esta política cambia, actualizaremos esta página y su fecha de entrada en vigor. Si un cambio supone recoger más datos, también lo explicaremos en las notas de la versión de la app.</p>
+
+<h2>Contacto</h2>
+<p><a href="mailto:business@firstimpresslabs.com">business@firstimpresslabs.com</a></p>
+
+<nav><a href="support.html">Soporte</a><a href="terms.html">Términos de uso</a></nav>
+</main>
+</body>
+</html>

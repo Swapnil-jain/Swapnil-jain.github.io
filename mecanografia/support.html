@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Mecanografía: Soporte</title>
+<style>
+/* Shared style for every app's legal pages. build.py inlines this file into each page,
+   then appends the app's own colour tokens (the "theme" block of its JSON), so an app
+   overrides colours only, never layout. Dark is the default; light follows the system. */
+:root {
+  --bg: #0b0d12; --surface: #151922; --text: #e8ebf2; --muted: #a3aab8;
+  --accent: #8ab4ff; --link: #8fd3ff; --border: rgba(255,255,255,0.08);
+  --warn-bg: #3a2a00; --warn-text: #ffe08a;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f7f8fb; --surface: #ffffff; --text: #141a2a; --muted: #4b5568;
+    --accent: #2b5fd9; --link: #1b5fa8; --border: rgba(0,0,0,0.10);
+    --warn-bg: #fff4cc; --warn-text: #5c4400; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
+.app { color: var(--accent); font-weight: 600; font-size: 15px; letter-spacing: 0.02em; margin: 0 0 4px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+h3 { font-size: 17px; margin: 20px 0 4px; }
+p, li { color: var(--text); overflow-wrap: anywhere; }
+.muted { color: var(--muted); font-size: 15px; }
+a { color: var(--link); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px 18px; margin: 16px 0; }
+.draft { background: var(--warn-bg); color: var(--warn-text); border-radius: 12px; padding: 12px 16px; margin: 0 0 24px; font-size: 15px; }
+.draft p { color: var(--warn-text); margin: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+nav { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 15px; }
+nav a { margin-right: 16px; }
+/* mecanografia theme */
+:root { --bg: #0d1020; --surface: #171b2f; --text: #eef0fa; --muted: #a6abc6; --accent: #8f98ff; --link: #8f98ff; }
+@media (prefers-color-scheme: light) { :root { --bg: #f5f3ee; --surface: #ffffff; --text: #151933; --muted: #585d74; --accent: #3a45d6; --link: #3a45d6; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <p class="app">Mecanografía: Escribir Rápido</p>
+  <h1>Soporte</h1>
+  <p class="muted">Actualizado el 6 de noviembre de 2026</p>
+</header>
+
+<div class="card">
+  <p><strong>Correo electrónico:</strong> <a href="mailto:business@firstimpresslabs.com?subject=Soporte%20de%20Mecanograf%C3%ADa">business@firstimpresslabs.com</a></p>
+  <p class="muted">Si nos escribes por un resultado que no te cuadra, dinos qué modo de examen y qué duración usabas.</p>
+</div>
+
+<h2>Preguntas frecuentes</h2>
+
+<h3>¿Cómo se calculan las pulsaciones netas?</h3>
+<p>Las <strong>pulsaciones brutas</strong> son los caracteres del texto que tienes escrito al terminar: letras, números, signos y espacios. Según las reglas de tu examen, algunos caracteres (por ejemplo, las mayúsculas o las letras con tilde) cuentan como 2. Puedes borrar: solo se puntúa el texto final.</p>
+<p>Cada error resta las pulsaciones que fijan las reglas que elijas (por ejemplo, 5 por cada carácter erróneo en las de las Cortes Generales de 2025). Las <strong>pulsaciones netas</strong> son las brutas menos esa penalización, y la app las divide entre los minutos de la prueba.</p>
+<p>Las reglas cambian de un examen a otro. Comprueba siempre las bases de tu convocatoria.</p>
+
+<h3>¿Puedo practicar con un teclado físico?</h3>
+<p>Sí, y es lo más parecido a la prueba de una oposición, que se hace con teclado físico. Conecta un teclado Bluetooth o USB, o usa un iPad con teclado (como el Magic Keyboard). La app lo detecta y deja toda la pantalla para el texto; en las lecciones muestra un mapa del teclado español como guía.</p>
+<p>La app solo comprueba si hay un teclado conectado, para adaptar la pantalla. No registra tus pulsaciones.</p>
+
+<h3>¿Cómo escribo las tildes y la ñ?</h3>
+<p>Igual que en el examen: con un teclado español, pulsa la tecla de la tilde (´) y después la vocal. La app puntúa el resultado como una sola letra, «á». Si las teclas no coinciden con lo que ves en pantalla, comprueba que la distribución de tu teclado físico sea la española en los ajustes de teclado de tu dispositivo.</p>
+
+<h3>¿La app es oficial?</h3>
+<p>No. La app no está vinculada a ningún organismo convocante. Los modos de examen se basan en las bases publicadas; comprueba siempre las de tu convocatoria.</p>
+
+<h3>¿Cómo cancelo mi suscripción?</h3>
+<p>Abre la app Ajustes, toca tu nombre, después Suscripciones, después Mecanografía: Escribir Rápido, y toca Cancelar suscripción. Cancela al menos 24 horas antes de que termine el periodo para evitar el siguiente cargo. Conservas Mecanografía Pro hasta el final del periodo que has pagado. Eliminar la app no cancela la suscripción.</p>
+
+<h3>¿Cómo pido un reembolso?</h3>
+<p>Apple gestiona todos los pagos y reembolsos: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+<h3>He reinstalado la app o tengo un dispositivo nuevo. ¿Cómo recupero Mecanografía Pro?</h3>
+<p>Inicia sesión con la misma Cuenta de Apple y toca «Restaurar compras» en los ajustes de la app (el icono del engranaje).</p>
+
+<nav><a href="privacy.html">Política de privacidad</a><a href="terms.html">Términos de uso</a></nav>
+</main>
+</body>
+</html>
