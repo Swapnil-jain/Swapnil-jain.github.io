@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Woo: Privacy Policy</title>
+<style>
+/* Shared style for every app's legal pages. build.py inlines this file into each page,
+   then appends the app's own colour tokens (the "theme" block of its JSON), so an app
+   overrides colours only, never layout. Dark is the default; light follows the system. */
+:root {
+  --bg: #0b0d12; --surface: #151922; --text: #e8ebf2; --muted: #a3aab8;
+  --accent: #8ab4ff; --link: #8fd3ff; --border: rgba(255,255,255,0.08);
+  --warn-bg: #3a2a00; --warn-text: #ffe08a;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f7f8fb; --surface: #ffffff; --text: #141a2a; --muted: #4b5568;
+    --accent: #2b5fd9; --link: #1b5fa8; --border: rgba(0,0,0,0.10);
+    --warn-bg: #fff4cc; --warn-text: #5c4400; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
+.app { color: var(--accent); font-weight: 600; font-size: 15px; letter-spacing: 0.02em; margin: 0 0 4px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+h3 { font-size: 17px; margin: 20px 0 4px; }
+p, li { color: var(--text); overflow-wrap: anywhere; }
+.muted { color: var(--muted); font-size: 15px; }
+a { color: var(--link); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px 18px; margin: 16px 0; }
+.draft { background: var(--warn-bg); color: var(--warn-text); border-radius: 12px; padding: 12px 16px; margin: 0 0 24px; font-size: 15px; }
+.draft p { color: var(--warn-text); margin: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+nav { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 15px; }
+nav a { margin-right: 16px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <p class="app">Woo</p>
+  <h1>Privacy Policy</h1>
+  <p class="muted">Effective 2026-11-09</p>
+</header>
+
+<div class="card">
+  <p><strong>In short:</strong> no account, no ads, no tracking. Only after you allow it, the screenshots you pick, any message you type and the name, age and gender from your profile (if you added them) go through our server to OpenAI to write replies. We do not keep them. The app also sends anonymous usage events with no identifier.</p>
+</div>
+
+<h2>Who we are</h2>
+<p>Woo (“the app”) is made by Swapnil Jain (“we”, “us”). Questions about privacy: <a href="mailto:business@firstimpresslabs.com">business@firstimpresslabs.com</a>.</p>
+
+<h2>What stays on your phone</h2>
+<p>These are stored on your device and are not sent to us:</p>
+<ul>
+  <li>Your profile, if you fill it in (name, age, gender and profile photo)</li>
+  <li>Your dating goal, the apps you use and the app language</li>
+  <li>Your reply history: up to 50 items, each with the replies, the style you chose and small copies of the screenshots you used</li>
+  <li>Whether you allowed screenshots to be sent for AI processing</li>
+  <li>How many replies you have used, and your purchase status</li>
+</ul>
+<p>Your profile photo, dating goal, app list and language are never sent anywhere.</p>
+
+<h2>What the app asks to use</h2>
+<p><strong>Photos.</strong> You pick screenshots of a chat or a dating profile to get reply ideas. When you pick a photo, Apple's photo picker gives the app only the photos you choose. The app cannot see the rest of your library.</p>
+
+<h2>What we collect</h2>
+<p>We collect anonymous usage events, such as which screens open and whether a purchase completed, to improve the app. They carry no identifier, are not linked to you, and are never used for ads or tracking.</p>
+<p>Apart from the anonymous usage events and what the AI feature sends, as described below, we do not collect your email address, phone number, contacts, payment card details, browsing or search history, crash data. We do not ask for or use the advertising identifier.</p>
+
+<h2>What you send for reply ideas</h2>
+<p>Only after you allow it in the app, and only when you ask for replies, the app sends the screenshots you picked (up to 3, each made smaller, at most 800 pixels on its longest side, JPEG), the reply style you chose, the other person's last message if you typed it, and, if you added them, the name, age and gender from your profile to our server, hosted on Cloudflare, which passes it to <strong>OpenAI</strong> to produce the result.</p>
+<ul>
+  <li><strong>OpenAI</strong>: reads the screenshots and writes the reply suggestions. (<a href="https://openai.com/policies/privacy-policy/">privacy policy</a>)</li>
+</ul>
+<p>The suggestions come back to your phone.</p>
+<p>Our server passes the request to OpenAI and the reply back to the app. It does not keep your screenshots or the text you send, and it does not write them to its logs. Like any web host, Cloudflare sees the IP address of each request.</p>
+<p>OpenAI states that it does not use data sent through its API to train its models unless the developer opts in (we have not), and that it may keep that data for up to 30 days to detect abuse before deleting it.</p>
+<p>When you ask to change the tone or length of the replies on screen, the app sends those replies as text the same way, with no screenshot.</p>
+<p>You can turn off sending screenshots in the app's Me tab. Then nothing is sent, and the app asks again before the next request.</p>
+<p>To keep the service from being misused, the app uses Apple's App Attest to show our server that a request comes from the real app. For that, our server keeps a key Apple creates for the app on your phone. It is not linked to you and is used for nothing else.</p>
+
+<h2>Who processes it</h2>
+<ul>
+  <li><strong>Cloudflare</strong> hosts the server that passes your photo to the AI provider, as our processor.</li>
+  <li><strong>OpenAI</strong> processes the photos you send, as described above.</li>
+  <li><strong>Apple</strong> handles all payments. We never see your card details.</li>
+  <li><strong>Cloudflare (our own analytics server)</strong> receives anonymous usage events, such as which screens open and whether a purchase completed, to improve the app. They carry no identifier, are not linked to you, and are never used for ads or tracking.</li>
+</ul>
+<p>Apple handles its services under its own privacy policy: <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</p>
+
+<h2>What we do not do</h2>
+<ul>
+  <li>We do not sell or share your data, and we do not use it for advertising.</li>
+  <li>We do not track you across other companies' apps or websites.</li>
+  <li>The app contains no ads.</li>
+</ul>
+
+<h2>Your choices</h2>
+<p>You can delete reply history items one by one or all at once in the app. Everything the app keeps is deleted when you delete the app, except the free-reply counter in your phone's keychain, which iOS may keep until you erase the phone. It holds only a count.</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children under 13, and we do not knowingly collect data from them.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, we will update this page and its effective date. A change that collects more data will also be described in the app's release notes.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:business@firstimpresslabs.com">business@firstimpresslabs.com</a></p>
+
+<nav><a href="support.html">Support</a><a href="terms.html">Terms of Use</a></nav>
+</main>
+</body>
+</html>
