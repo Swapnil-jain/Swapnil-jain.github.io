@@ -54,7 +54,7 @@ nav a { margin-right: 16px; }
 </header>
 
 <div class="card">
-  <p><strong>In short:</strong> no account, no ads, no tracking. Only after you allow it, each photo you identify goes through our server to OpenAI to name the plant. We do not keep it. Your history and collection stay on your phone.</p>
+  <p><strong>In short:</strong> no account, no ads, no tracking. Only after you allow it, each photo you identify goes through our server to OpenAI to name the plant. We do not keep it. Your history and collection stay on your phone. The app also sends anonymous usage events with no identifier.</p>
 </div>
 
 <h2>Who we are</h2>
@@ -73,8 +73,9 @@ nav a { margin-right: 16px; }
 <p><strong>Camera.</strong> The app uses the camera to photograph a tree, leaf or plant you want to identify, only when you choose to. That photo is sent for identification as described below, like a photo you pick.</p>
 <p><strong>Photos.</strong> The app identifies photos you pick, and saves a result card to your library only when you tap Save Image. When you pick a photo, Apple's photo picker gives the app only the photos you choose. The app cannot see the rest of your library. To save an image, the app asks only for permission to add photos to your library, which does not let it see your photos.</p>
 
-<h2>What we do not collect</h2>
-<p>Apart from what the AI feature sends, as described below, we do not collect your name, email address, phone number, contacts, payment card details, browsing or search history, usage analytics or crash data. We do not ask for or use the advertising identifier.</p>
+<h2>What we collect</h2>
+<p>We collect anonymous usage events, such as which screens open, whether an identification worked and whether a purchase completed, to improve the app. They carry no identifier, are not linked to you, and are never used for ads or tracking.</p>
+<p>Apart from the anonymous usage events and what the AI feature sends, as described below, we do not collect your name, email address, phone number, contacts, payment card details, browsing or search history. We do not ask for or use the advertising identifier.</p>
 
 <h2>Photos you send for identification</h2>
 <p>Only after you allow it in the app, and only when you identify a plant, the app sends the photo (made smaller, at most about 1,200 pixels on its longest side, saved as a new JPEG that leaves out details such as where it was taken) and a fixed instruction to our server, hosted on Cloudflare, which passes it to <strong>OpenAI</strong> to produce the result.</p>
@@ -93,6 +94,7 @@ nav a { margin-right: 16px; }
   <li><strong>Cloudflare</strong> hosts the server that passes your photo to the AI provider, as our processor.</li>
   <li><strong>OpenAI</strong> processes the photos you send, as described above.</li>
   <li><strong>Apple</strong> handles all payments. We never see your card details.</li>
+  <li><strong>Cloudflare (our own analytics server)</strong> receives anonymous usage events, such as which screens open, whether an identification worked and whether a purchase completed, to improve the app. They carry no identifier, are not linked to you, and are never used for ads or tracking.</li>
 </ul>
 <p>Apple handles its services under its own privacy policy: <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</p>
 
@@ -100,7 +102,7 @@ nav a { margin-right: 16px; }
 <ul>
   <li>We do not sell or share your data, and we do not use it for advertising.</li>
   <li>We do not track you across other companies' apps or websites.</li>
-  <li>The app contains no ads and no analytics or crash-reporting SDKs.</li>
+  <li>The app contains no ads.</li>
 </ul>
 
 <h2>Your choices</h2>
