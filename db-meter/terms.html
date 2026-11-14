@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>dB Meter: Terms of Use</title>
+<style>
+/* Shared style for every app's legal pages. build.py inlines this file into each page,
+   then appends the app's own colour tokens (the "theme" block of its JSON), so an app
+   overrides colours only, never layout. Dark is the default; light follows the system. */
+:root {
+  --bg: #0b0d12; --surface: #151922; --text: #e8ebf2; --muted: #a3aab8;
+  --accent: #8ab4ff; --link: #8fd3ff; --border: rgba(255,255,255,0.08);
+  --warn-bg: #3a2a00; --warn-text: #ffe08a;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f7f8fb; --surface: #ffffff; --text: #141a2a; --muted: #4b5568;
+    --accent: #2b5fd9; --link: #1b5fa8; --border: rgba(0,0,0,0.10);
+    --warn-bg: #fff4cc; --warn-text: #5c4400; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
+.app { color: var(--accent); font-weight: 600; font-size: 15px; letter-spacing: 0.02em; margin: 0 0 4px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+h3 { font-size: 17px; margin: 20px 0 4px; }
+p, li { color: var(--text); overflow-wrap: anywhere; }
+.muted { color: var(--muted); font-size: 15px; }
+a { color: var(--link); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px 18px; margin: 16px 0; }
+.draft { background: var(--warn-bg); color: var(--warn-text); border-radius: 12px; padding: 12px 16px; margin: 0 0 24px; font-size: 15px; }
+.draft p { color: var(--warn-text); margin: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+nav { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 15px; }
+nav a { margin-right: 16px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <p class="app">dB Meter</p>
+  <h1>Terms of Use</h1>
+  <p class="muted">Effective 2026-11-14</p>
+</header>
+
+<h2>1. The agreement</h2>
+<p>dB Meter (“the app”) is licensed to you under Apple's Standard Licensed Application End User License Agreement (<a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/">Apple's standard EULA</a>). These terms add to it. If the two conflict, Apple's standard EULA applies. The app is made by Swapnil Jain (“we”, “us”).</p>
+
+<h2>2. Readings are approximate</h2>
+<div class="card">
+  <p>Sound levels are <strong>approximate</strong> and depend on your phone's microphone and surroundings. The app is not a calibrated sound level meter and is not for professional, medical, legal or safety-critical measurement, including workplace noise compliance.</p>
+</div>
+
+<h2>3. Quietly Pro</h2>
+<p>Some features need Quietly Pro:</p>
+<ul>
+  <li><strong>Quietly Pro Lifetime</strong>: one-time purchase that does not renew. One payment for every Pro feature.</li>
+  <li><strong>Quietly Pro Yearly</strong>: auto-renewing subscription.</li>
+  <li><strong>Quietly Pro Weekly</strong>: auto-renewing subscription.</li>
+</ul>
+<p>The price, in your currency, is shown in the app before you buy.</p>
+<ul>
+  <li>Payment is charged to your Apple Account when you confirm the purchase.</li>
+  <li>A subscription renews automatically at the same length and price unless you turn off auto-renew at least 24 hours before the end of the current period. Your account is charged for the renewal within the 24 hours before the current period ends.</li>
+  <li>Manage or cancel in the Settings app: tap your name, then Subscriptions. Cancelling stops the next renewal; Quietly Pro stays on until the end of the period you paid for.</li>
+  <li>Deleting the app does not cancel a subscription.</li>
+  <li>Refunds are handled by Apple under its policies: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</li>
+  <li>Use Restore Purchases in the app to bring Quietly Pro back on a new or reset device signed in with the same Apple Account.</li>
+</ul>
+
+<h2>4. Acceptable use</h2>
+<p>Use the app only for lawful purposes.</p>
+
+<h2>5. Changes and availability</h2>
+<p>We may change, add or remove features, and we may update these terms. We will change the effective date above when we do. If you keep using the app after a change, the new terms apply.</p>
+
+<h2>6. Liability</h2>
+<p>We work to keep the app accurate and available, but we do not promise it will be error-free or always available. To the extent the law allows, the app is provided “as is”, and we are not liable for any loss or harm that comes from relying on the app or anything it shows, as also set out in Apple's standard EULA.</p>
+
+<h2>7. Governing law</h2>
+<p>These terms are governed by the laws of India.</p>
+
+<h2>8. Contact</h2>
+<p><a href="mailto:business@firstimpresslabs.com">business@firstimpresslabs.com</a></p>
+
+<nav><a href="support.html">Support</a><a href="privacy.html">Privacy Policy</a></nav>
+</main>
+</body>
+</html>
