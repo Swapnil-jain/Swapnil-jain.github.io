@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Tree ID: Privacy Policy</title>
+<style>
+/* Shared style for every app's legal pages. build.py inlines this file into each page,
+   then appends the app's own colour tokens (the "theme" block of its JSON), so an app
+   overrides colours only, never layout. Dark is the default; light follows the system. */
+:root {
+  --bg: #0b0d12; --surface: #151922; --text: #e8ebf2; --muted: #a3aab8;
+  --accent: #8ab4ff; --link: #8fd3ff; --border: rgba(255,255,255,0.08);
+  --warn-bg: #3a2a00; --warn-text: #ffe08a;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f7f8fb; --surface: #ffffff; --text: #141a2a; --muted: #4b5568;
+    --accent: #2b5fd9; --link: #1b5fa8; --border: rgba(0,0,0,0.10);
+    --warn-bg: #fff4cc; --warn-text: #5c4400; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
+.app { color: var(--accent); font-weight: 600; font-size: 15px; letter-spacing: 0.02em; margin: 0 0 4px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+h3 { font-size: 17px; margin: 20px 0 4px; }
+p, li { color: var(--text); overflow-wrap: anywhere; }
+.muted { color: var(--muted); font-size: 15px; }
+a { color: var(--link); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px 18px; margin: 16px 0; }
+.draft { background: var(--warn-bg); color: var(--warn-text); border-radius: 12px; padding: 12px 16px; margin: 0 0 24px; font-size: 15px; }
+.draft p { color: var(--warn-text); margin: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+nav { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 15px; }
+nav a { margin-right: 16px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <p class="app">Tree Identifier: Plant Scanner</p>
+  <h1>Privacy Policy</h1>
+  <p class="muted">Effective 2026-11-14</p>
+</header>
+
+<div class="card">
+  <p><strong>In short:</strong> no account, no ads, no tracking. Only after you allow it, each photo you identify goes through our server to OpenAI to name the plant. We do not keep it. Your history and collection stay on your phone. The app also sends anonymous usage events with no identifier.</p>
+</div>
+
+<h2>Who we are</h2>
+<p>Tree Identifier: Plant Scanner (“the app”) is made by Swapnil Jain (“we”, “us”). Questions about privacy: <a href="mailto:business@firstimpresslabs.com">business@firstimpresslabs.com</a>.</p>
+
+<h2>What stays on your phone</h2>
+<p>These are stored on your device and are not sent to us:</p>
+<ul>
+  <li>Your scan history: the last 50 results, each with a small copy of the photo</li>
+  <li>Your collection of identified plants (names and dates)</li>
+  <li>Whether you allowed photos to be sent for identification</li>
+  <li>Your free-scan count, your weekly scan count and your subscription status (kept in your phone's keychain)</li>
+</ul>
+
+<h2>What the app asks to use</h2>
+<p><strong>Camera.</strong> The app uses the camera to photograph a tree, leaf or plant you want to identify, only when you choose to. That photo is sent for identification as described below, like a photo you pick.</p>
+<p><strong>Photos.</strong> The app identifies photos you pick, and saves a result card to your library only when you tap Save Image. When you pick a photo, Apple's photo picker gives the app only the photos you choose. The app cannot see the rest of your library. To save an image, the app asks only for permission to add photos to your library, which does not let it see your photos.</p>
+
+<h2>What we collect</h2>
+<p>We collect anonymous usage events, such as which screens open, whether an identification worked and whether a purchase completed, to improve the app. They carry no identifier, are not linked to you, and are never used for ads or tracking.</p>
+<p>Apart from the anonymous usage events and what the AI feature sends, as described below, we do not collect your name, email address, phone number, contacts, payment card details, browsing or search history. We do not ask for or use the advertising identifier.</p>
+
+<h2>Photos you send for identification</h2>
+<p>Only after you allow it in the app, and only when you identify a plant, the app sends the photo (made smaller, at most about 1,200 pixels on its longest side, saved as a new JPEG that leaves out details such as where it was taken) and a fixed instruction to our server, hosted on Cloudflare, which passes it to <strong>OpenAI</strong> to produce the result.</p>
+<ul>
+  <li><strong>OpenAI</strong>: identifies the plant and writes the description you see. (<a href="https://openai.com/policies/privacy-policy/">privacy policy</a>)</li>
+</ul>
+<p>The result comes back to your phone.</p>
+<p>Our server passes the request to OpenAI and the result back to the app. It does not keep your photos, and it does not write them to its logs. Like any web host, Cloudflare sees the IP address of each request.</p>
+<p>OpenAI may keep the photo for a limited time under its own terms, linked above. We do not control how long it keeps it.</p>
+<p>The app first checks on your phone whether the photo shows a plant. If it clearly does not, nothing is sent.</p>
+<p>If you tap Not now, nothing is sent, and the app asks again the next time you identify a plant. You can turn off sending photos in the app's Settings at any time.</p>
+<p>To keep the service from being misused, the app uses Apple's App Attest to show our server that a request comes from the real app. For that, our server keeps a key Apple creates for the app on your phone. It is not linked to you and is used for nothing else.</p>
+
+<h2>Who processes it</h2>
+<ul>
+  <li><strong>Cloudflare</strong> hosts the server that passes your photo to the AI provider, as our processor.</li>
+  <li><strong>OpenAI</strong> processes the photos you send, as described above.</li>
+  <li><strong>Apple</strong> handles all payments. We never see your card details.</li>
+  <li><strong>Cloudflare (our own analytics server)</strong> receives anonymous usage events, such as which screens open, whether an identification worked and whether a purchase completed, to improve the app. They carry no identifier, are not linked to you, and are never used for ads or tracking.</li>
+</ul>
+<p>Apple handles its services under its own privacy policy: <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</p>
+
+<h2>What we do not do</h2>
+<ul>
+  <li>We do not sell or share your data, and we do not use it for advertising.</li>
+  <li>We do not track you across other companies' apps or websites.</li>
+  <li>The app contains no ads.</li>
+</ul>
+
+<h2>Your choices</h2>
+<ul>
+  <li>Allow or remove access to the camera and your photos in the Settings app at any time.</li>
+</ul>
+<p>You can delete scans one by one or clear your whole history in the app. Everything the app keeps is deleted when you delete the app, except the counts and subscription status in the keychain, which iOS may keep until you erase the phone, so your free scan is not given again if you reinstall.</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children under 13, and we do not knowingly collect data from them.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, we will update this page and its effective date. A change that collects more data will also be described in the app's release notes.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:business@firstimpresslabs.com">business@firstimpresslabs.com</a></p>
+
+<nav><a href="support.html">Support</a><a href="terms.html">Terms of Use</a></nav>
+</main>
+</body>
+</html>
