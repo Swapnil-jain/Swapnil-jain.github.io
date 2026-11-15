@@ -50,7 +50,7 @@ nav a { margin-right: 16px; }
 <header>
   <p class="app">Woo</p>
   <h1>Privacy Policy</h1>
-  <p class="muted">Effective 2026-11-09</p>
+  <p class="muted">Effective 2026-11-15</p>
 </header>
 
 <div class="card">
@@ -79,15 +79,15 @@ nav a { margin-right: 16px; }
 <p>Apart from the anonymous usage events and what the AI feature sends, as described below, we do not collect your email address, phone number, contacts, payment card details, browsing or search history, crash data. We do not ask for or use the advertising identifier.</p>
 
 <h2>What you send for reply ideas</h2>
-<p>Only after you allow it in the app, and only when you ask for replies, the app sends the screenshots you picked (up to 3, each made smaller, at most 800 pixels on its longest side, JPEG), the reply style you chose, the other person's last message if you typed it, and, if you added them, the name, age and gender from your profile to our server, hosted on Cloudflare, which passes it to <strong>OpenAI</strong> to produce the result.</p>
+<p>Only after you allow it in the app, and only when you ask for replies, the app sends the screenshots you picked (up to 3, each made smaller, at most 512 pixels on its longest side, JPEG; versions before 1.4 sent up to 800 pixels), the reply style you chose, the other person's last message if you typed it, and, if you added them, the name, age and gender from your profile to our server, hosted on Cloudflare, which passes it to <strong>OpenAI</strong> to produce the result.</p>
 <ul>
   <li><strong>OpenAI</strong>: reads the screenshots and writes the reply suggestions. (<a href="https://openai.com/policies/privacy-policy/">privacy policy</a>)</li>
 </ul>
 <p>The suggestions come back to your phone.</p>
 <p>Our server passes the request to OpenAI and the reply back to the app. It does not keep your screenshots or the text you send, and it does not write them to its logs. Like any web host, Cloudflare sees the IP address of each request.</p>
 <p>OpenAI states that it does not use data sent through its API to train its models unless the developer opts in (we have not), and that it may keep that data for up to 30 days to detect abuse before deleting it.</p>
-<p>When you ask to change the tone or length of the replies on screen, the app sends those replies as text the same way, with no screenshot.</p>
-<p>You can turn off sending screenshots in the app's Me tab. Then nothing is sent, and the app asks again before the next request.</p>
+<p>From version 1.4 the suggestions come back in every tone and length with that one request, so changing the tone or length on screen sends nothing. In earlier versions, changing them sends the replies on screen as text the same way, with no screenshot.</p>
+<p>To withdraw your permission, email us at the contact address in this policy. Nothing is sent unless you ask for replies, and deleting the app removes the permission with everything else the app keeps. Versions before 1.4 also have a switch for this in the app's Me tab.</p>
 <p>To keep the service from being misused, the app uses Apple's App Attest to show our server that a request comes from the real app. For that, our server keeps a key Apple creates for the app on your phone. It is not linked to you and is used for nothing else.</p>
 
 <h2>Who processes it</h2>
