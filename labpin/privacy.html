@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Labpin: Privacy Policy</title>
+<style>
+/* Shared style for every app's legal pages. build.py inlines this file into each page,
+   then appends the app's own colour tokens (the "theme" block of its JSON), so an app
+   overrides colours only, never layout. Dark is the default; light follows the system. */
+:root {
+  --bg: #0b0d12; --surface: #151922; --text: #e8ebf2; --muted: #a3aab8;
+  --accent: #8ab4ff; --link: #8fd3ff; --border: rgba(255,255,255,0.08);
+  --warn-bg: #3a2a00; --warn-text: #ffe08a;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f7f8fb; --surface: #ffffff; --text: #141a2a; --muted: #4b5568;
+    --accent: #2b5fd9; --link: #1b5fa8; --border: rgba(0,0,0,0.10);
+    --warn-bg: #fff4cc; --warn-text: #5c4400; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
+.app { color: var(--accent); font-weight: 600; font-size: 15px; letter-spacing: 0.02em; margin: 0 0 4px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+h3 { font-size: 17px; margin: 20px 0 4px; }
+p, li { color: var(--text); overflow-wrap: anywhere; }
+.muted { color: var(--muted); font-size: 15px; }
+a { color: var(--link); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px 18px; margin: 16px 0; }
+.draft { background: var(--warn-bg); color: var(--warn-text); border-radius: 12px; padding: 12px 16px; margin: 0 0 24px; font-size: 15px; }
+.draft p { color: var(--warn-text); margin: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+nav { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 15px; }
+nav a { margin-right: 16px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <p class="app">Labpin</p>
+  <h1>Privacy Policy</h1>
+  <p class="muted">Effective 2026-11-16</p>
+</header>
+
+<div class="card">
+  <p><strong>In short:</strong> no account, no ads, no tracking. Your progress and decks stay on your phone and, if you turn it on, in your own iCloud account. Only after you allow it, the text of the note pages you pick goes through our server to an AI model that writes cards. The app also sends anonymous usage events with no identifier.</p>
+</div>
+
+<h2>Who we are</h2>
+<p>Labpin (“the app”) is made by Swapnil Jain (“we”, “us”). Questions about privacy: <a href="mailto:business@firstimpresslabs.com">business@firstimpresslabs.com</a>.</p>
+
+<h2>What stays on your phone</h2>
+<p>These are stored on your device and are not sent to us:</p>
+<ul>
+  <li>Your drill progress, answers and mistakes</li>
+  <li>Your exam date, regions and reminder time</li>
+  <li>The cards made from your notes, with the lines they quote</li>
+  <li>Your settings and purchase status</li>
+  <li>A record that you used the one free notes deck, kept in your phone's keychain</li>
+</ul>
+<p>The pages you pick are read on your phone. The app keeps the cards made from them, not the pages.</p>
+
+<h2>What the app asks to use</h2>
+<p><strong>Camera.</strong> The app uses the camera to scan pages of your notes, only when you choose to. The scan is read on your phone and not kept. Only its text is sent, and only as described under notes to cards.</p>
+<p><strong>Photos.</strong> You can pick photos of your notes to turn into cards. When you pick a photo, Apple's photo picker gives the app only the photos you choose. The app cannot see the rest of your library. The photo is read on your phone and not kept. Only its text is sent, and only as described under notes to cards.</p>
+<p><strong>Notifications.</strong> If you allow notifications, the app reminds you once a day when your review is ready, at the time you choose, and at most a few times a week when your streak is about to end. Both are set up on your phone. Reminders are scheduled on your phone; nothing about them is sent to us.</p>
+
+<h2>iCloud sync</h2>
+<p>If iCloud is on for this app, your drill progress, your exam plan and your notes decks are synced through your private iCloud account using Apple CloudKit, so they appear on your other devices. Apple stores this data; we cannot see it.</p>
+
+<h2>What we collect</h2>
+<p>We collect anonymous usage events, such as which screens open and whether a purchase completed, to improve the app. They carry no identifier, are not linked to you, and are never used for ads or tracking.</p>
+<p>Apart from the anonymous usage events and what the AI feature sends, as described below, we do not collect your name, email address, phone number, contacts, payment card details, browsing or search history. We do not ask for or use the advertising identifier.</p>
+
+<h2>Notes to cards</h2>
+<p>Only after you allow it in the app, and only when you ask for cards, the app sends the text of the pages you picked (read on your phone from the PDF, or by on-device text recognition from a scan or photo, at most 30 pages a deck), never the images to our server, hosted on Cloudflare, which passes it to <strong>Replicate</strong> and <strong>Google</strong> to produce the result.</p>
+<ul>
+  <li><strong>Replicate</strong>: runs the AI model for us. (<a href="https://replicate.com/privacy">privacy policy</a>)</li>
+  <li><strong>Google</strong>: its Gemini model reads the text and writes the cards. (<a href="https://policies.google.com/privacy">privacy policy</a>)</li>
+</ul>
+<p>The cards come back to your phone. The app keeps only cards whose quoted line it finds in your page.</p>
+<p>Our server passes the text to Replicate and the cards back to the app. It does not keep your text and does not write it to its logs. Like any web host, Cloudflare sees the IP address of each request.</p>
+<p>Replicate and Google may keep the text for a limited time under their own terms.</p>
+<p>To withdraw your permission, email us at the contact address in this policy. Nothing is sent unless you ask for cards, and deleting the app removes the permission with everything else the app keeps.</p>
+<p>To keep the service from being misused, the app uses Apple's App Attest to show our server that a request comes from the real app. For that, our server keeps a key Apple creates for the app on your phone. It is not linked to you and is used for nothing else.</p>
+
+<h2>Who processes it</h2>
+<ul>
+  <li><strong>Cloudflare</strong> hosts the server that passes your photo to the AI provider, as our processor.</li>
+  <li><strong>Replicate</strong> processes the photos you send, as described above.</li>
+  <li><strong>Google</strong> processes the photos you send, as described above.</li>
+  <li><strong>Apple</strong> handles all payments. We never see your card details.</li>
+  <li><strong>Apple iCloud</strong> stores your synced data in your own private iCloud account. We cannot see it.</li>
+  <li><strong>Cloudflare (our own analytics server)</strong> receives anonymous usage events, such as which screens open and whether a purchase completed, to improve the app. They carry no identifier, are not linked to you, and are never used for ads or tracking.</li>
+</ul>
+<p>Apple handles its services under its own privacy policy: <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</p>
+
+<h2>What we do not do</h2>
+<ul>
+  <li>We do not sell or share your data, and we do not use it for advertising.</li>
+  <li>We do not track you across other companies' apps or websites.</li>
+  <li>The app contains no ads.</li>
+</ul>
+
+<h2>Your choices</h2>
+<ul>
+  <li>Allow or remove access to the camera in the Settings app at any time.</li>
+  <li>Turn off notifications for the app in the Settings app.</li>
+  <li>Turn off iCloud for the app in the Settings app to stop syncing.</li>
+  <li>Withdraw your permission for AI processing at any time by writing to business@firstimpresslabs.com. Nothing is sent unless you start an AI feature yourself.</li>
+</ul>
+<p>You can delete decks and reset your progress in the app. Everything the app keeps is deleted when you delete the app, except the free-deck record in the keychain, which iOS may keep until you erase the phone. Data synced to iCloud stays in your iCloud account until you delete it there.</p>
+
+<h2>Children</h2>
+<p>The app is not directed at children under 13, and we do not knowingly collect data from them.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, we will update this page and its effective date. A change that collects more data will also be described in the app's release notes.</p>
+
+<h2>Contact</h2>
+<p><a href="mailto:business@firstimpresslabs.com">business@firstimpresslabs.com</a></p>
+
+<nav><a href="support.html">Support</a><a href="terms.html">Terms of Use</a></nav>
+</main>
+</body>
+</html>
