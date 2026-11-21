@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>Tabla Periódica: Soporte</title>
+<style>
+/* Shared style for every app's legal pages. build.py inlines this file into each page,
+   then appends the app's own colour tokens (the "theme" block of its JSON), so an app
+   overrides colours only, never layout. Dark is the default; light follows the system. */
+:root {
+  --bg: #0b0d12; --surface: #151922; --text: #e8ebf2; --muted: #a3aab8;
+  --accent: #8ab4ff; --link: #8fd3ff; --border: rgba(255,255,255,0.08);
+  --warn-bg: #3a2a00; --warn-text: #ffe08a;
+}
+@media (prefers-color-scheme: light) {
+  :root { --bg: #f7f8fb; --surface: #ffffff; --text: #141a2a; --muted: #4b5568;
+    --accent: #2b5fd9; --link: #1b5fa8; --border: rgba(0,0,0,0.10);
+    --warn-bg: #fff4cc; --warn-text: #5c4400; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 32px 16px 64px; }
+header { border-bottom: 1px solid var(--border); padding-bottom: 16px; margin-bottom: 24px; }
+.app { color: var(--accent); font-weight: 600; font-size: 15px; letter-spacing: 0.02em; margin: 0 0 4px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 21px; margin: 32px 0 8px; }
+h3 { font-size: 17px; margin: 20px 0 4px; }
+p, li { color: var(--text); overflow-wrap: anywhere; }
+.muted { color: var(--muted); font-size: 15px; }
+a { color: var(--link); }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+.card { background: var(--surface); border: 1px solid var(--border); border-radius: 16px; padding: 16px 18px; margin: 16px 0; }
+.draft { background: var(--warn-bg); color: var(--warn-text); border-radius: 12px; padding: 12px 16px; margin: 0 0 24px; font-size: 15px; }
+.draft p { color: var(--warn-text); margin: 0; }
+table { width: 100%; border-collapse: collapse; font-size: 15px; }
+th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid var(--border); }
+th { color: var(--muted); font-weight: 600; }
+.table-wrap { overflow-x: auto; }
+nav { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--border); font-size: 15px; }
+nav a { margin-right: 16px; }
+/* tablaperiodica theme */
+:root { --bg: #141613; --surface: #1e211d; --text: #eeece6; --muted: #b4b6ae; --accent: #7cc4b5; --link: #7cc4b5; }
+@media (prefers-color-scheme: light) { :root { --bg: #f4f1ea; --surface: #ffffff; --text: #16181d; --muted: #575c66; --accent: #0d5e52; --link: #0d5e52; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <p class="app">Tabla Periódica y Formulación</p>
+  <h1>Soporte</h1>
+  <p class="muted">Actualizado el 21 de noviembre de 2026</p>
+</header>
+
+<div class="card">
+  <p><strong>Correo electrónico:</strong> <a href="mailto:business@firstimpresslabs.com?subject=Soporte%20Tabla%20Peri%C3%B3dica">business@firstimpresslabs.com</a></p>
+</div>
+
+<h2>Preguntas frecuentes</h2>
+
+<h3>¿Qué nomenclaturas corrige la app?</h3>
+<p>La sistemática (con prefijos, y la de hidrógeno en los oxoácidos), la de Stock y los nombres tradicionales que la IUPAC sigue aceptando, como ácido sulfúrico o amoníaco. Puedes elegir cuáles practicar en Ajustes. Los nombres antiguos en -oso e -ico se pueden activar si tu profesor los pide.</p>
+
+<h3>¿Por qué me marca la tilde?</h3>
+<p>Una respuesta sin tildes cuenta como acierto, pero la app te avisa para que la escribas bien en el examen.</p>
+
+<h3>He encontrado un nombre que creo que está mal</h3>
+<p>Escríbenos con la fórmula y el nombre que esperabas. Revisamos cada caso con las recomendaciones de la IUPAC.</p>
+
+<h3>¿Cómo cancelo mi suscripción?</h3>
+<p>Abre la app Ajustes, toca tu nombre, después Suscripciones, después Tabla Periódica y Formulación, y toca Cancelar suscripción. Cancela al menos 24 horas antes de que termine el periodo para evitar el siguiente cargo. Conservas Formulación Pro hasta el final del periodo que has pagado. Eliminar la app no cancela la suscripción.</p>
+
+<h3>¿Cómo pido un reembolso?</h3>
+<p>Apple gestiona todos los pagos y reembolsos: <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a>.</p>
+
+<h3>He reinstalado la app o tengo un dispositivo nuevo. ¿Cómo recupero Formulación Pro?</h3>
+<p>Inicia sesión con la misma Cuenta de Apple y toca «Restaurar compras» en Ajustes de la app o en la pantalla de Formulación Pro.</p>
+
+<nav><a href="privacy.html">Política de privacidad</a><a href="terms.html">Términos de uso</a></nav>
+</main>
+</body>
+</html>
